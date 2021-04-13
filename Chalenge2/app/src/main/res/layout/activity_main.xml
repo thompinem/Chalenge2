@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <!--batu kertas guntung pemain-->
+    <ImageView
+        android:id="@+id/kertas1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/kertas"
+        app:layout_constraintTop_toBottomOf="@id/batu1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <ImageView
+        android:id="@+id/batu1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/batu"
+        app:layout_constraintTop_toBottomOf="@id/pemain1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <ImageView
+        android:id="@+id/gunting1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/gunting"
+        app:layout_constraintTop_toBottomOf="@id/kertas1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <!--batu kertas guntung com-->
+
+    <ImageView
+        android:id="@+id/gunting2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/gunting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/gunting1"
+        app:layout_constraintTop_toBottomOf="@id/kertas2" />
+
+    <ImageView
+        android:id="@+id/batu2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:src="@drawable/batu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/batu1"
+        app:layout_constraintTop_toBottomOf="@id/com"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <ImageView
+        android:id="@+id/kertas2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/kertas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/kertas1"
+        app:layout_constraintTop_toBottomOf="@id/batu2" />
+
+
+    <!--refresh image-->
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/refresh"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="378dp"
+        tools:layout_editor_absoluteY="650dp" />
+
+
+    <!--Keterangan-->
+    <TextView
+        android:id="@+id/pemain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemain 1"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <TextView
+        android:id="@+id/com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Com"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="340dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

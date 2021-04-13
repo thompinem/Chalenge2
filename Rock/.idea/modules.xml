@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Chalenge3-Thom/.idea/modules/Rock.iml" filepath="$PROJECT_DIR$/../Chalenge3-Thom/.idea/modules/Rock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Chalenge3-Thom/.idea/modules/app/Rock.app.iml" filepath="$PROJECT_DIR$/../Chalenge3-Thom/.idea/modules/app/Rock.app.iml" />
+    </modules>
+  </component>
+</project>

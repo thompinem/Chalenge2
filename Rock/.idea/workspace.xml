@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="49ace9a5-d7e3-4537-90ee-db0e4c0e3030" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Chalenge2/app/src/main/res/drawable/batu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge2/app/src/main/res/drawable/gunting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge2/app/src/main/res/drawable/kertas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge2/app/src/main/res/drawable/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge3_Thom/app/src/main/java/com/example/chalenge3_thom/page1Fragment/Page1Fragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge3_Thom/app/src/main/java/com/example/chalenge3_thom/splashScreen/SplashScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge3_Thom/app/src/main/res/drawable/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge3_Thom/app/src/main/res/drawable/landingpage1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge3_Thom/app/src/main/res/drawable/landingpage2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge3_Thom/app/src/main/res/drawable/landingpage3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge3_Thom/app/src/main/res/drawable/splash_screen1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge3_Thom/app/src/main/res/drawable/splash_screen2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chalenge3_Thom/app/src/main/res/layout/fragment_page1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment/app/src/main/java/com/example/fragment/KeduaFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment/app/src/main/java/com/example/fragment/PertamaFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment/app/src/main/res/layout/fragment_kedua.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment/app/src/main/res/layout/fragment_pertama.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment5/app/src/main/java/com/example/fragment5/duaFragment/DuaFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment5/app/src/main/java/com/example/fragment5/satuFragment/SatuFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment5/app/src/main/java/com/example/fragment5/secondActivity/SecondActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment5/app/src/main/java/com/example/fragment5/tigaFragment/TigaFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment5/app/src/main/res/layout/activity_second.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment5/app/src/main/res/layout/fragment_dua.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment5/app/src/main/res/layout/fragment_satu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fragment5/app/src/main/res/layout/fragment_tiga.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ghozi1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ghozi1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Permision/app/src/main/java/com/example/permision/PertamaFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Permision/app/src/main/res/layout/fragment_pertama.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/custom2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/custom3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/custom4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/custom_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/gradasi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/gradasi2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/gradasi3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/gradasi4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/ic_baseline_attractions_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/ic_baseline_hearing_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/ic_baseline_local_drink_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/ic_baseline_message_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/ic_baseline_offline_bolt_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/ic_baseline_pan_tool_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/ic_baseline_pregnant_woman_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/ic_baseline_search_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../belajar/app/src/main/res/drawable/ic_baseline_stars_24.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1qqNrToZ1WMEUQBTlCWnqNWUZb9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49ace9a5-d7e3-4537-90ee-db0e4c0e3030" name="Default Changelist" comment="" />
+      <created>1617803358252</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617803358252</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1617804176609">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1617804176609" />
+  </component>
+</project>
