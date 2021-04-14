@@ -21,8 +21,8 @@ class MainActivity2 : AppCompatActivity(), Callback2 {
 
         //AlertDialog
         val view = LayoutInflater.from(this).inflate(
-            R.layout.dialog,
-            null, false
+                R.layout.dialog,
+                null, false
         )
         val alert = androidx.appcompat.app.AlertDialog.Builder(this)
 
@@ -37,18 +37,18 @@ class MainActivity2 : AppCompatActivity(), Callback2 {
             dialog.dismiss()
         }
 
-        val btnBack =view.findViewById<Button>(R.id.btnAlert2)
+        val btnBack = view.findViewById<Button>(R.id.btnAlert2)
 
         btnBack.setOnClickListener {
             finish()
         }
         val hasil = view.findViewById<TextView>(R.id.textView2)
         val hasil1 =
-            if(result2 == "Menang"){
-                "$name \n Menang"
-            }else{
-                result2
-            }
+                if (result2 == "Menang") {
+                    "$name \n Menang"
+                } else {
+                    result2
+                }
         hasil.text = hasil1
     }
 
@@ -67,11 +67,11 @@ class MainActivity2 : AppCompatActivity(), Callback2 {
     private lateinit var close: ImageView
 
 
-
     @SuppressLint("ResourceAsColor", "NewApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+
 
         batu = findViewById(R.id.batuPemain1)
         kertas = findViewById(R.id.kertasPemain1)
@@ -84,86 +84,69 @@ class MainActivity2 : AppCompatActivity(), Callback2 {
         batuCom = findViewById(R.id.batuCom)
         kertasCom = findViewById(R.id.kertasCom)
         guntingCom = findViewById(R.id.guntingCom)
-        nameUser1 = findViewById(R.id.cpu)
+        nameUser1 = findViewById(R.id.user)
         close = findViewById(R.id.close)
+
+        //Receive Bundle UserName from MenuActivity
+        val bundle = intent.extras
+        val name = bundle?.getString("name")
+        nameUser1.text = "$name"
 
 
         val controller = Controller2(this)
         var pencet: Boolean = true
-        var pencetCom = true
         var player1 = ""
         var player2 = ""
 
         batu.setOnClickListener {
-            player1 = "batu"
-            batu.setBackgroundColor(design_default_color_primary_dark)
-            if(player2 != ""&& pencet){
-                controller.logic("batu","")
-                Toast.makeText(this,"$nameUser1 memilih batu",Toast.LENGTH_LONG).show()
-                pencet = false
-                 } else {
-                Toast.makeText(this, "Reset dulu Boss", Toast.LENGTH_LONG).show()
+            if (player2 != "" && pencet) {
+                player1 = "batu"
+                batu.setBackgroundColor(design_default_color_primary_dark)
+                Toast.makeText(this, "$name memilih batu", Toast.LENGTH_SHORT).show()
+                controller.logic("batu", player2)
             }
         }
         kertas.setOnClickListener {
-            player1 = "kertas"
-            kertas.setBackgroundColor(design_default_color_primary_dark)
-            if(player2 != ""&& pencet){
-                controller.logic("kertas","")
+            if (player2 != "" && pencet) {
+                player1 = "kertas"
+                kertas.setBackgroundColor(design_default_color_primary_dark)
+                Toast.makeText(this, "$name memilih kertas", Toast.LENGTH_LONG).show()
+                controller.logic("kertas", player2)
 
-                Toast.makeText(this,"$nameUser1 memilih kertas",Toast.LENGTH_LONG).show()
-                pencet = false
-            } else {
-                Toast.makeText(this, "Reset dulu Boss", Toast.LENGTH_LONG).show()
             }
         }
         gunting.setOnClickListener {
-            player1 = "gunting"
-            gunting.setBackgroundColor(design_default_color_primary_dark)
-            if(player2 != ""&& pencet){
-                controller.logic("gunting","")
 
-                Toast.makeText(this,"$nameUser1 memilih gunting",Toast.LENGTH_LONG).show()
-                pencet = false
-            } else {
-                Toast.makeText(this, "Reset dulu Boss", Toast.LENGTH_LONG).show()
+            if (player2 != "" && pencet) {
+                player1 = "gunting"
+                gunting.setBackgroundColor(design_default_color_primary_dark)
+                Toast.makeText(this, "$name memilih gunting", Toast.LENGTH_LONG).show()
+                controller.logic("gunting", player2)
+
             }
         }
         batuCom.setOnClickListener {
-            player2 = "batu"
-            if(player1 != ""&& pencetCom){
-                controller.logic("","batu")
+            if (player1 != "" && pencet) {
+                player2 = "batu"
                 batuCom.setBackgroundColor(design_default_color_primary_dark)
-                Toast.makeText(this,"Player2 memilih batu",Toast.LENGTH_LONG).show()
-                pencetCom = false
-            } else {
-                Toast.makeText(this, "Reset dulu Boss", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Pemain2 memilih batu", Toast.LENGTH_LONG).show()
+                controller.logic(player1, "batu")
             }
         }
         kertasCom.setOnClickListener {
-            player2 = "kertas"
-
-
-            if(player1 != ""&& pencetCom){
-                controller.logic("","kertas")
+            if (player1 != "" && pencet) {
+                player2 = "kertas"
                 kertasCom.setBackgroundColor(design_default_color_primary_dark)
-
-                Toast.makeText(this,"Player2 memilih kertas",Toast.LENGTH_LONG).show()
-                pencetCom = false
-            } else {
-                Toast.makeText(this, "Reset dulu Boss", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Pemain2 memilih kertas", Toast.LENGTH_LONG).show()
+                controller.logic(player1, "kertas")
             }
         }
         guntingCom.setOnClickListener {
-            player2 = "gunting"
-
-            if(player1 != ""&& pencetCom){
-                controller.logic("","gunting")
+            if (player1 != "" && pencet) {
+                controller.logic(player1, "gunting")
+                player2 = "gunting"
                 guntingCom.setBackgroundColor(design_default_color_primary_dark)
-                Toast.makeText(this,"Player2 memilih gunting",Toast.LENGTH_LONG).show()
-                pencetCom = false
-            } else {
-                Toast.makeText(this, "Reset dulu Boss", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Pemain2 memilih gunting", Toast.LENGTH_LONG).show()
             }
         }
         refresh.setOnClickListener {
@@ -174,21 +157,18 @@ class MainActivity2 : AppCompatActivity(), Callback2 {
             kertasCom.background = getDrawable(android.R.color.transparent)
             guntingCom.background = getDrawable(android.R.color.transparent)
             pencet = true
-            pencetCom = true
             vs.setImageResource(R.drawable.vs)
             player1 = ""
             player2 = ""
         }
+
         close.setOnClickListener {
             finish()
         }
-
-        //Receive Bundle UserName from MenuActivity
-        val bundle = intent.extras
-        val name = bundle?.getString("name")
-        nameUser1.text = "$name"
-
     }
 }
+
+
+
 
 

@@ -58,5 +58,7 @@ class MenuActivity : AppCompatActivity() {
         }
     }
         //Close Button
-
+    override fun onBackPressed() {
+        finishAffinity()
     }
+}
